@@ -1,7 +1,10 @@
 <?php
 
+use App\Http\Controllers\AdminController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
+use Laravel\Socialite\Two\FacebookProvider;
 
 /*
 |--------------------------------------------------------------------------
@@ -29,3 +32,11 @@ Route::middleware('auth')->group(function () {
 });
 
 require __DIR__.'/auth.php';
+// admin
+Route::get('/admin/dashboard',[AdminController::class,'dashboard']);
+Route::get('/admin/lead_data',[AdminController::class,'read_lead_message']);
+Route::get('/admin/user_detail/{name}',[AdminController::class,'getFacebookId']);
+// Facebook
+Route::get('/facebook/login',[UserController::class,'userLogin']);
+Route::get('/facebook/callback',[UserController::class,'userCallback']);
+
