@@ -33,8 +33,7 @@ return [
     'facebook'=>[
         'client_id'=>'1344460462917700',
         'client_secret'=>'4cdcab8bec558fc94b18248381198ec9',
-        'redirect'=>'https://b1a5-2401-4900-1f86-31f6-d852-5065-ccdd-9282.ngrok-free.app/facebook/callback',
-        'token'=>'EAATGx5hOiEQBOzt6MiVXLRs2bodFd7A680UcFfgHmpyYpPMQAhhXKfuD4gFKNgVxQyrpZCXN8fbALSdFgS2ti8uXPFX79xLhfBCYItceNs82MBdbSGsOjwPBul1ZAhsFk4ZBu6D7sKTJSZAd3YcZCDrdEHinKBUs4fYlZBo0NNbTMWeniVcSB7hALsbMGgqk7x3kBQgAk8qrkxgIN10sMBbdwZD',
+        'token'=>'EAATGx5hOiEQBO11YBkGI3D1GZApnn0oNWLFRRxo6ZAJpK4XuFDcYwQSIT1TskqmEO24ZCRpOcswfgAz7o3f7fal3RcrrZCaqsiW4QokWO4kXqFqr3MkzFORmXCDnmjF5NBXPbXU2u13LJEhZB3VwLAmuoLALeuz7d1V0caRoeKWXhym4o1Ti5aWsVOX66ElXxkaiS1GGGuIpPriqUhZAUiHPcZD',
         'expires_at'=>null,
     ]
 
