@@ -33,7 +33,7 @@ return [
     'facebook'=>[
         'client_id'=>'1344460462917700',
         'client_secret'=>'4cdcab8bec558fc94b18248381198ec9',
-        'token'=>'EAATGx5hOiEQBO11YBkGI3D1GZApnn0oNWLFRRxo6ZAJpK4XuFDcYwQSIT1TskqmEO24ZCRpOcswfgAz7o3f7fal3RcrrZCaqsiW4QokWO4kXqFqr3MkzFORmXCDnmjF5NBXPbXU2u13LJEhZB3VwLAmuoLALeuz7d1V0caRoeKWXhym4o1Ti5aWsVOX66ElXxkaiS1GGGuIpPriqUhZAUiHPcZD',
+        'token'=>'EAATGx5hOiEQBOZBMmOzSUlTYVNLavzx5P5kkOmSR6BsR7DGmVCczhXMWwS91Tpe8hnvNcUn6HM6BZBZCtZBdjPwq40pSKNzFZANFQDYfbCcTVwqcansZBQGc0Qx8XHbWpSggfs0hcQtRSP5HUdpKa8l7Pv0046aZBbF29YAsXJgRf41y5DGjVZAHkKTPXKVBMCfvAm634WfYFMhaDxRCNx0DTJYZD',
         'expires_at'=>null,
     ]
 
