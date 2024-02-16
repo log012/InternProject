@@ -53,8 +53,8 @@
               CORE
             </div>
           </li>
-          <li>
-            <a href="/admin/dashboard" class="nav-link px-3 active">
+          <li class="">
+            <a href="/admin/dashboard" class="nav-link px-3 active Active">
               <span class="me-2">
                 <i class="bi bi-speedometer2"></i>
               </span>
@@ -69,8 +69,8 @@
               Main Menu
             </div>
           </li>
-          <li>
-            <a href="" class="nav-link px-3 active">
+          <li class="Active">
+            <a href="" class="nav-link px-3 active Active">
               <span class="me-2">
                 <i class="bi bi-bounding-box-circles"></i>
               </span>
@@ -78,23 +78,23 @@
             </a>
           </li>
           <li>
-            <a href="/admin/lead_data" class="nav-link px-3 active">
+            <a href="/admin/lead_data" class="nav-link px-3 active Active">
               <span class="me-2">
                 <i class="bi bi-currency-dollar"></i>
               </span>
               <span>Leads</span>
             </a>
           </li>
-          <li>
-            <a href="" class="nav-link px-3 active">
+          <li class="Active">
+            <a href="" class="nav-link px-3 active Active">
               <span class="me-2">
                 <i class="bi bi-chat-fill"></i>
               </span>
               <span>Chat</span>
             </a>
           </li>
-          <li>
-            <a href="" class="nav-link px-3 active">
+          <li class="Active">
+            <a href="" class="nav-link px-3 active Active">
               <span class="me-2">
                 <i class="bi bi-currency-dollar"></i>
               </span>

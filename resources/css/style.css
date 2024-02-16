@@ -6,6 +6,11 @@
 .sidebar {
     width: 270px !important;
 }
+/* .Active:focus{
+   border-radius: 10px;
+   background-color: yellow !important;
+   color: black !important;
+} */
 
 @media (min-width: 992px) {
     body{

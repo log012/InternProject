@@ -37,35 +37,31 @@ class RefreshFacebookToken
     public function refreshToken()
     {
        
-        $oldToken = Config::get('services.facebook.token');
-        // dd($oldToken);
+      
+    //    $pageResponse=Http::withHeaders([
+
+    //    ])->get('')
 
       
         $response = Http::withHeaders([
             'Authorization' => 'Bearer EAATGx5hOiEQBO4bJ1wcPqNiwG7XEePK0uOEcnxq0Oc7tX2lAXxrILWZCx2RtO68fDZBLykrZClk5Cn3fkkRwBbkTGeoCISPSkZCjpL4aiLaj2zN3UbjB7V9LJZAOZCXXFMa7TeZAamrGquOfDKiIlkinJhJxQi2b2BI128HX0x4eZA5ATBVFOWSUZCeFc'
         ])->get('https://graph.facebook.com/v19.0/178447022029079?fields=access_token');
-        //  dd($response);
         
-        
-        
-           
-            // $responseData = $response->json();
-            // dd($responseData);
            
            
                 
             $newToken = null;
-        $expiryTime = null;
+   
         if ($response->successful()) {
             $responseData = $response->json();
-            // dd($responseData);
-            if (isset($responseData['access_token'])) {
+            
+                        if (isset($responseData['access_token'])) {
                 $newToken = $responseData['access_token'];
-                $expiryTime = now()->addHour();
+             
             }
         }
 
-        Config::set('services.facebook.expires_at', $expiryTime);
+        
         return $newToken;  
     }
 

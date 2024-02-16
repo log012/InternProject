@@ -30,9 +30,9 @@
                             <th>
                                Leads Message
                             </th>
-                            {{-- <th>
-                                Page Name
-                            </th> --}}
+                            <th>
+                                Facebook_Post
+                            </th>
                             <th>
                                 Actions
                             </th>
@@ -50,7 +50,7 @@
                                  <td><a href="https://www.facebook.com/permalink.php?story_fbid=pfbid02VWk9YSxeGYFS2G5mikzZ59xh4tb63s1B5NH3RhMK7iFqp7Tewq7HUrikpLLpNUwol&id=61556216881509
 
                                     " class="text-primary text-decoration-none">{{$item['message']}}</a></td>
-                                 {{-- <td><a href="https://www.facebook.com/profile.php?id=61556216881509" class="text-primary text-decoration-none">{{$data2}}</a></td> --}}
+                                 <td><a href="https://www.facebook.com/profile.php?id=61556216881509" class="text-primary text-decoration-none">{{($item['outerMessage'])}}</a></td>
                                  <td>
                                     {{-- @dd($item['from']) --}}
                                     @if (isset($item['from']))
