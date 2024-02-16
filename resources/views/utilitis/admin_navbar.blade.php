@@ -54,7 +54,7 @@
             </div>
           </li>
           <li class="">
-            <a href="/admin/dashboard" class="nav-link px-3 active Active">
+            <a href="/admin/dashboard" class="nav-link px-3 navbar-button">
               <span class="me-2">
                 <i class="bi bi-speedometer2"></i>
               </span>
@@ -70,7 +70,7 @@
             </div>
           </li>
           <li class="Active">
-            <a href="" class="nav-link px-3 active Active">
+            <a href="/admin/campaignes" class="nav-link px-3  navbar-button">
               <span class="me-2">
                 <i class="bi bi-bounding-box-circles"></i>
               </span>
@@ -78,7 +78,7 @@
             </a>
           </li>
           <li>
-            <a href="/admin/lead_data" class="nav-link px-3 active Active">
+            <a href="/admin/lead_data" class="nav-link px-3  navbar-button">
               <span class="me-2">
                 <i class="bi bi-currency-dollar"></i>
               </span>
@@ -86,21 +86,14 @@
             </a>
           </li>
           <li class="Active">
-            <a href="" class="nav-link px-3 active Active">
+            <a href="/admin/chat" class="nav-link px-3  navbar-button">
               <span class="me-2">
                 <i class="bi bi-chat-fill"></i>
               </span>
               <span>Chat</span>
             </a>
           </li>
-          <li class="Active">
-            <a href="" class="nav-link px-3 active Active">
-              <span class="me-2">
-                <i class="bi bi-currency-dollar"></i>
-              </span>
-              <span>Leads</span>
-            </a>
-          </li>
+         
          </ul>
      </nav>
   </div>

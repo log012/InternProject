@@ -15,7 +15,7 @@ class AdminRepository implements AdminRepositoryInterface{
     }
     public function dashboard(){
         $urlPost = 'https://graph.facebook.com/v19.0/me/posts?fields=id';
-
+        //  dd($this->accessToken);
         $getId = Http::withHeaders([
             'Authorization' => 'Bearer '.$this->accessToken
         ])->get($urlPost);
@@ -54,7 +54,7 @@ class AdminRepository implements AdminRepositoryInterface{
         ])->get($url3);
 
         $responsePost= (array)json_decode($response2->body());
-        dd($responsePost);
+        // dd($responsePost);
         $dataPost=(array)$responsePost['posts'];
         $dataPost=$dataPost['data'];
         // dd($dataPost);
