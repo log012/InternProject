@@ -33,8 +33,7 @@ return [
     'facebook'=>[
         'client_id'=>'1344460462917700',
         'client_secret'=>'4cdcab8bec558fc94b18248381198ec9',
-        'token'=>'EAATGx5hOiEQBOZBMmOzSUlTYVNLavzx5P5kkOmSR6BsR7DGmVCczhXMWwS91Tpe8hnvNcUn6HM6BZBZCtZBdjPwq40pSKNzFZANFQDYfbCcTVwqcansZBQGc0Qx8XHbWpSggfs0hcQtRSP5HUdpKa8l7Pv0046aZBbF29YAsXJgRf41y5DGjVZAHkKTPXKVBMCfvAm634WfYFMhaDxRCNx0DTJYZD',
-        'expires_at'=>null,
+        'redirect'=>'https://d1df-2401-4900-1a86-31e0-d4d2-7f31-d4f4-7652.ngrok-free.app/facebook/callback',
     ]
 
 ];

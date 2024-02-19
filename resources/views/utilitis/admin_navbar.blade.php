@@ -61,6 +61,14 @@
               <span>Dashboard</span>
             </a>
           </li>
+          <li class="">
+            <a href="/" class="nav-link px-3 navbar-button" id="index">
+              <span class="me-2">
+                <i class="bi bi-speedometer2"></i>
+              </span>
+              <span>Home</span>
+            </a>
+          </li>
           <li class="my-4">
               <hr class=""/>
           </li>

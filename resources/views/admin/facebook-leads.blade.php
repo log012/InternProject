@@ -16,13 +16,11 @@
     @include('utilitis.admin_navbar')
     <main class="mt-5 pt-3">
         <div class="container mt-3">
-            <div class="heading d-flex justify-content-center">
-                   <h1>Total leads Details</h1>
-            </div>
+           
             {{-- use DataTables here --}}
-            <div class="table mt-5" >
-                <table class="table table-primary table-hover" id="myTable">
-                     <thead>
+            <div class="table-responsive table mt-5" >
+                <table class="table table-primary table-hover" id="myTable" style="box-shadow: 20px">
+                     <thead class="thead-dark">
                           <tr>
                             <th>
                                Sr No
@@ -33,9 +31,7 @@
                             <th>
                                 Facebook_Post
                             </th>
-                            <th>
-                                Actions
-                            </th>
+                           
                           </tr>
                      </thead>
                      <tbody>
@@ -51,15 +47,7 @@
 
                                     " class="text-primary text-decoration-none">{{$item['message']}}</a></td>
                                  <td><a href="https://www.facebook.com/profile.php?id=61556216881509" class="text-primary text-decoration-none">{{($item['outerMessage'])}}</a></td>
-                                 <td>
-                                    {{-- @dd($item['from']) --}}
-                                    @if (isset($item['from']))
-                                    <a href="/admin/user_detail/{{$item['from']}}" class="btn btn-success">User</a>
-
-                                    @else
-                                        <span>The user information not found</span>
-                                    @endif
-                                 </td>
+                             
                               </tr>
                              @php
                                  $count++

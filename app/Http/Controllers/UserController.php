@@ -16,12 +16,15 @@ class UserController extends Controller
 
     public function userCallback(){
         $user=Socialite::driver('facebook')->user();
+        
+        // dd($user);
         $data=User::where('facebook_id',$user->getId())->first();
         if($data){
             Auth::login($data);
             return redirect('/');
         }else{
             $newUser= User::updateOrCreate(['name'=>$user->getName()],['email'=>$user->getEmail(),'facebook_id'=>$user->getId(),'password'=>encrypt('vipul123')]);
+            
             Auth::login($newUser);
             return redirect('/');
         }

@@ -3,6 +3,7 @@ namespace App\repository;
 
 use App\Http\Middleware\RefreshFacebookToken;
 use App\Models\User;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Http;
 
 class AdminRepository implements AdminRepositoryInterface{
@@ -10,8 +11,8 @@ class AdminRepository implements AdminRepositoryInterface{
 
     public function __construct()
     {   
-        $refresh=new RefreshFacebookToken;
-        $this->accessToken= $refresh->refreshToken();
+        
+        $this->accessToken= DB::table('access_tokens')->value('access_token');
     }
     public function dashboard(){
         $urlPost = 'https://graph.facebook.com/v19.0/me/posts?fields=id';
@@ -120,12 +121,15 @@ if (isset($postId['data'])) {
     }
 }
 
-return view('admin.facebook-leads', ['data' => $allComments
+$userData=User::all();
+// dd($userData);
+
+return view('admin.facebook-leads', ['data' => $allComments,'userData'=>$userData
 ]);
     }
     public function getFacebookId($name){
         $user = User::where('name', $name)->first();
-
+        // dd($user);
         return view('admin.user-detail', ['user' => $user]);
     }
 
