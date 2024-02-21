@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\Auth\AuthenticatedSessionController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
@@ -17,7 +18,7 @@ use Laravel\Socialite\Two\FacebookProvider;
 |
 */
 
-Route::get('/', function () {
+Route::get('/home', function () {
     return view('welcome');
 });
 
@@ -39,4 +40,5 @@ Route::get('/admin/user_detail/{name}',[AdminController::class,'getFacebookId'])
 // Facebook
 Route::get('/facebook/login',[UserController::class,'userLogin']);
 Route::get('/facebook/callback',[UserController::class,'userCallback']);
+Route::post('/logout',[AuthenticatedSessionController::class,'destroy'])->name('logout')->middleware('auth');
 

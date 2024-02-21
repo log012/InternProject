@@ -11,7 +11,10 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-   
+      <form method="POST" class="ms-auto my-3 my-lg-0" action="{{ route('logout') }}">
+        @csrf
+        <button type="submit" class="btn btn-danger">Logout</button>
+    </form>
       <form class="d-flex ms-auto my-3 my-lg-0" role="search">
         <div class="input-group">
 
@@ -19,7 +22,7 @@
           <button class="btn btn-primary" type="button" id="button-addon2"><i class="bi bi-search"></i></button>
         </div>
         </form>
-
+     
         <ul class="navbar-nav mb-2 mb-lg-0">
 
         
@@ -28,10 +31,10 @@
             <i class="bi bi-person-fill"></i>
           </a>
           <ul class="dropdown-menu dropdown-menu-end">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <li><a class="dropdown-item" href="#">@if (Session::has('userName'))
+              <h5>{{Session::get('userName')}}</h5>
+            @endif</a></li>
+           
           </ul>
         </li>
       </ul>
@@ -62,7 +65,7 @@
             </a>
           </li>
           <li class="">
-            <a href="/" class="nav-link px-3 navbar-button" id="index">
+            <a href="/home" class="nav-link px-3 navbar-button" id="index">
               <span class="me-2">
                 <i class="bi bi-speedometer2"></i>
               </span>
@@ -73,7 +76,7 @@
               <hr class=""/>
           </li>
           <li>
-            <div class="  fw-bold text-uppercase px-3">
+            <div class="fw-bold text-uppercase px-3">
               Main Menu
             </div>
           </li>

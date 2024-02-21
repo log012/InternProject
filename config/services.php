@@ -33,7 +33,7 @@ return [
     'facebook'=>[
         'client_id'=>'1344460462917700',
         'client_secret'=>'4cdcab8bec558fc94b18248381198ec9',
-        'redirect'=>'https://d1df-2401-4900-1a86-31e0-d4d2-7f31-d4f4-7652.ngrok-free.app/facebook/callback',
+        'redirect'=>'https://e14e-2401-4900-53e6-301b-a042-206c-35bf-7a7a.ngrok-free.app/facebook/callback',
     ]
 
 ];
