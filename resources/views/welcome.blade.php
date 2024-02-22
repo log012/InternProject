@@ -38,8 +38,9 @@
 
                     <button type="submit" class="btn btn-primary mb-3">Login</button>
                     <h6>Login With Facebook</h6>
-                    <a href="/facebook/login" class="text-primary">Login</a>
+                    
                 </form>
+                <a href="/facebook/login" class="text-primary">Login</a>
             </div>
         </div>
     </div>
