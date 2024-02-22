@@ -26,8 +26,8 @@
                 <form method="POST" action="{{ route('login') }}">
                     @csrf
 
-                    <div class="h2">Log in</div>
-                    <div class="mb-3">
+                    <div class="h2 font-weight-bolder">Log in</div>
+                    <div class="mb-2">
                         <label for="email" class="form-label">Email</label>
                         <input type="email" id="email" name="email" class="form-control">
                     </div>
@@ -37,9 +37,10 @@
                     </div>
 
                     <button type="submit" class="btn btn-primary mb-3">Login</button>
-                    <h6>Login With Facebook</h6>
-                    <a href="/facebook/login" class="text-primary">Login</a>
                 </form>
+                <hr style="color: rrgba(0, 0, 0, 0.2)">
+                <h6>Login With Facebook</h6>
+                <a href="/facebook/login" class="text-primary">Login</a>
             </div>
         </div>
     </div>
