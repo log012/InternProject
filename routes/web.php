@@ -35,6 +35,7 @@ Route::middleware('auth')->group(function () {
 require __DIR__.'/auth.php';
 // admin
 Route::get('/admin/dashboard',[AdminController::class,'dashboard']);
+Route::get('/admin/home',[AdminController::class,'home'])->name('admin.home'); 
 Route::get('/admin/lead_data',[AdminController::class,'read_lead_message']);
 Route::get('/admin/user_detail/{name}',[AdminController::class,'getFacebookId']);
 // Facebook

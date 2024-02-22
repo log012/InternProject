@@ -24,6 +24,11 @@ class AdminController extends Controller
         return $this->adminRepository->dashboard();
     }
 
+    public function home()
+    {
+        return view('admin.home');
+    }
+
     public function read_lead_message()
     {
 

@@ -46,7 +46,7 @@
 
 
 
-<div class="offcanvas  offcanvas-start bg-dark text-white sidebar" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel" >
+<div class="offcanvas offcanvas-start bg-dark text-white sidebar" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel" >
   
   <div class="offcanvas-body p-0">
      <nav class="navbar-dark">
