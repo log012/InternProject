@@ -30,12 +30,12 @@ class UserController extends Controller
         session()->put(
           'userName',$user->getName()
         );
-            return redirect('/home');
+            return redirect('/admin/dashboard');
         }else{
             $newUser= User::updateOrCreate(['name'=>$user->getName()],['email'=>$user->getEmail(),'facebook_id'=>$user->getId(),'facebook_access_token'=>$user->token,'password'=>encrypt('vipul123')]);
             
             Auth::login($newUser);
-            return redirect('/');
+            return redirect('/admin/dashboard');
         }
     }
 

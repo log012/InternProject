@@ -37,10 +37,9 @@
                     </div>
 
                     <button type="submit" class="btn btn-primary mb-3">Login</button>
+                    <h6>Login With Facebook</h6>
+                    <a href="/facebook/login" class="text-primary">Login</a>
                 </form>
-                <hr style="color: rrgba(0, 0, 0, 0.2)">
-                <h6>Login With Facebook</h6>
-                <a href="/facebook/login" class="text-primary">Login</a>
             </div>
         </div>
     </div>
