@@ -18,11 +18,11 @@
     <title>Document</title>
 </head>
 
-<body>
+<body style="background-color: #F4F4F4">
 
     <div class="container">
-        <div class="row justify-content-center">
-            <div class="border rounded form-group col-md-4" style="padding: 20px 40px; margin-top:6rem; box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.2);">
+        <div class="row justify-content-center" >
+            <div class="border rounded form-group col-md-4" style="padding: 20px 40px; margin-top:6rem; box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.2); background-color: #FFF"">
                 <form method="POST" action="{{ route('login') }}">
                     @csrf
 
@@ -36,10 +36,12 @@
                         <input type="password" id="password" name="password" class="form-control">
                     </div>
 
-                    <button type="submit" class="btn btn-primary mb-3">Login</button>
-                    <h6>Login With Facebook</h6>
-                    <a href="/facebook/login" class="text-primary">Login</a>
+                    <button type="submit" class="btn mb-3" style="background-color: #4267B2; color: #F4F4F4">Login</button>
+
                 </form>
+                <hr style="color: rgba(0, 0, 0, 0.2)">
+                <h6>Login With Facebook</h6>
+                <a href="/facebook/login" style="color: #4267B2">Login</a>
             </div>
         </div>
     </div>
