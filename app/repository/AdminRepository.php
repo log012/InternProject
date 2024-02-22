@@ -3,6 +3,7 @@ namespace App\repository;
 
 use App\Http\Middleware\RefreshFacebookToken;
 use App\Models\User;
+use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Http;
 
@@ -49,6 +50,7 @@ class AdminRepository implements AdminRepositoryInterface{
         return view('admin.dashboard', ['data' => $allComments]);
     }
     public function read_lead_message(){
+        // Artisan::call('app:refresh-access-token-command');
         $url3 = "https://graph.facebook.com/v19.0/me?fields=posts";
         $response2 = Http::withHeaders([
             'Authorization' => 'Bearer '.$this->accessToken

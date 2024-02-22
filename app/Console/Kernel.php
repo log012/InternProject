@@ -13,7 +13,7 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule): void
     {
-        $schedule->command(refreshAccessTokenCommand::class)->hourly();
+        $schedule->command('app:refresh-access-token-command')->hourly();
     }
 
     /**
