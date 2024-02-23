@@ -29,6 +29,12 @@ class AdminController extends Controller
         return view('admin.home');
     }
 
+    public function developer()
+    {
+        return view('admin.developer');
+    }
+    
+
     public function read_lead_message()
     {
 

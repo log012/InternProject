@@ -34,10 +34,11 @@ Route::middleware('auth')->group(function () {
 
 require __DIR__.'/auth.php';
 // admin
-Route::get('/admin/dashboard',[AdminController::class,'dashboard']);
+Route::get('/admin/dashboard',[AdminController::class,'dashboard'])->name('admin.dashboard');
+Route::get('/admin/developer',[AdminController::class,'developer'])->name('admin.developer');
 Route::get('/admin/home',[AdminController::class,'home'])->name('admin.home'); 
 Route::get('/admin/lead_data',[AdminController::class,'read_lead_message']);
-Route::get('/admin/user_detail/{name}',[AdminController::class,'getFacebookId']);
+Route::get('/admin/user_detail',[AdminController::class,'getFacebookId'])->name('admin.user_detail'); // add /{name} to the route
 // Facebook
 Route::get('/facebook/login',[UserController::class,'userLogin']);
 Route::get('/facebook/callback',[UserController::class,'userCallback']);
