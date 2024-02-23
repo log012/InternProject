@@ -18,16 +18,16 @@
     <title>Document</title>
 </head>
 
-<body>
+<body style="background-color: #F4F4F4">
 
     <div class="container">
-        <div class="row justify-content-center">
-            <div class="border rounded form-group col-md-4" style="padding: 20px 40px; margin-top:6rem; box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.2);">
-                <form method="POST" action="{{ route('login') }}">
+        <div class="row justify-content-center" >
+            <div class="border rounded form-group col-md-4" style="padding: 20px 40px; margin-top:6rem; box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.2); background-color: #FFF"">
+                <form method="POST" action="{{ route('login') }}"> {{--change the route to the login route--}}
                     @csrf
 
-                    <div class="h2">Log in</div>
-                    <div class="mb-3">
+                    <div class="h2" style="font-weight: 700; color: #4267B2">Log in</div>
+                    <div class="mb-2">
                         <label for="email" class="form-label">Email</label>
                         <input type="email" id="email" name="email" class="form-control">
                     </div>
@@ -36,11 +36,12 @@
                         <input type="password" id="password" name="password" class="form-control">
                     </div>
 
-                    <button type="submit" class="btn btn-primary mb-3">Login</button>
-                    <h6>Login With Facebook</h6>
-                    
+                    <button type="submit" class="btn mb-3" style="background-color: #4267B2; color: #F4F4F4">Login</button>
+
                 </form>
-                <a href="/facebook/login" class="text-primary">Login</a>
+                <hr style="color: rgba(0, 0, 0, 0.3)">
+                <h6>Login With Facebook</h6>
+                <a href="/facebook/login" style="color: #4267B2">Login</a>
             </div>
         </div>
     </div>
