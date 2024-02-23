@@ -9,8 +9,7 @@
         </div>
 
         <!-- Links -->
-        <div
-            class="nav-links md:static absolute bg-white md:bg-transparent md:min-h-fit min-h-[90%] left-0 top-[-100%] w-[12rem] md:w-auto flex px-5 py-5">
+        <div class="nav-links md:static absolute bg-white md:bg-transparent md:min-h-fit min-h-[90%] left-0 top-[-100%] w-[12rem] md:w-auto flex px-5 py-5">
             <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
                 <li><x-nav-link :href="route('admin.home')" :active="request()->routeIs('admin.home')">
                         {{ __('Home') }}
