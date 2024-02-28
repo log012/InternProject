@@ -35,7 +35,7 @@ Route::middleware('auth')->group(function () {
 Route::get('/login',[AdminController::class,'login'])->name('login');
 
 Route::get('/admin/developer',[AdminController::class,'developer'])->name('admin.developer');
-Route::get('/admin/home',[AdminController::class,'home'])->name('admin.home'); 
+Route::get('/home',[AdminController::class,'home'])->name('admin.home'); 
 Route::get('/admin/lead_data',[AdminController::class,'read_lead_message']);
 Route::get('/admin/user_detail/{name}',[AdminController::class,'getFacebookId'])->name('admin.user_detail'); // add /{name} to the route
 // Facebook

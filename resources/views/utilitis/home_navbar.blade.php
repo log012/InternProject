@@ -11,15 +11,15 @@
         <!-- Links -->
         <div class="nav-links md:static absolute bg-white md:bg-transparent md:min-h-fit min-h-[90%] left-0 top-[-100%] w-[12rem] md:w-auto flex px-5 py-5">
             <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
-                <li><x-nav-link :href="route('admin.home')" :active="request()->routeIs('admin.home')">
+                <li class="text-lg"><x-nav-link :href="route('admin.home')" :active="request()->routeIs('admin.home')">
                         {{ __('Home') }}
                     </x-nav-link></li>
 
-                <li><x-nav-link :href="route('admin.dashboard')" :active="request()->routeIs('admin.dashboard')">
+                <li class="text-lg"><x-nav-link :href="route('admin.dashboard')" :active="request()->routeIs('admin.dashboard')">
                         {{ __('Dashboard') }}
                     </x-nav-link></li>
 
-                <li><x-nav-link :href="route('admin.developer')" :active="request()->routeIs('admin.developer')">
+                <li class="text-lg"><x-nav-link :href="route('admin.developer')" :active="request()->routeIs('admin.developer')">
                         {{ __('Developers') }}
                     </x-nav-link></li>
             </ul>
@@ -36,7 +36,6 @@
 
 <script>
     const navLinks = document.querySelector('.nav-links');
-    // console.log(navLinks.classList.contains('top-[-100%]'));
     function onToggleMenu(e) {
         e.name = e.name === 'menu' ? 'close' : 'menu';
         navLinks.classList.toggle('top-[-100%]');

@@ -11,9 +11,8 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-    {{-- <link rel="preconnect" href="https://fonts.bunny.net">
-    <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" /> --}}
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
 
     <!-- Scripts -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
@@ -21,24 +20,17 @@
 </head>
 
 <body class="font-sans antialiased">
-    @include('utilitis.home_navbar')
-    <div class="min-h-screen bg-gray-100 p-5">
-
-
-        <!-- Page Heading -->
-        @if (isset($header))
-            <header class="bg-white shadow">
-                <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6">
-                    {{ $header }}
-                </div>
-            </header>
-        @endif
-
+    @if (Auth::check())
+        @include('utilitis.navbar')
+    @else
+        @include('utilitis.home_navbar')
+    @endif
+    <div class="min-h-screen bg-gray-100 p-6">
         <!-- Page Content -->
-        <h1 class="font-bold text-xl text-[#16233C]">Hello, <!--username route--></h1>
+        <h1 class="font-bold text-xl text-[#16233C]">Hello, people.! This is </h1>
         <br>
-        <div class="text-4xl font-semibold text-[#375695] text-center font-serif">Webhook integration with facebook Graph API for <br>lead collection.</div>
-
+        <div class="text-4xl font-semibold text-[#375695] text-center font-serif">Webhook integration with facebook
+            Graph API for <br>lead collection.</div>
     </div>
 </body>
 
