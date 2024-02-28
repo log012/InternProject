@@ -14,7 +14,7 @@
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    {{-- @vite(['resources/css/app.css', 'resources/js/app.js']) --}}
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
     <title>Document</title>
 </head>
 
@@ -28,20 +28,20 @@
 
                     <div class="h2" style="font-weight: 700; color: #4267B2">Log in</div>
                     <div class="mb-2">
-                        <label for="email" class="form-label">Email</label>
-                        <input type="email" id="email" name="email" class="form-control">
+                        <label for="email" class="form-label font-semibold text-[#16233C]">Email</label>
+                        <input type="email" id="email" name="email" class="form-control border-gray-300 rounded">
                     </div>
                     <div class="mb-3">
-                        <label for="password" class="form-label">Password</label>
-                        <input type="password" id="password" name="password" class="form-control">
+                        <label for="password" class="form-label font-semibold text-[#16233C]">Password</label>
+                        <input type="password" id="password" name="password" class="form-control border-gray-300 rounded">
                     </div>
 
-                    <button type="submit" class="btn mb-3" style="background-color: #4267B2; color: #F4F4F4">Login</button>
+                    <button type="submit" class="btn mb-3 font-bold text-[#F4F4F4]" style="background-color: #4267B2; color: #F4F4F4">Login</button> {{--change the route to the for login to save in database--}}
 
                 </form>
                 <hr style="color: rgba(0, 0, 0, 0.3)">
-                <h6>Login With Facebook</h6>
-                <a href="/facebook/login" style="color: #4267B2">Login</a>
+                <h6 class="font-bold mt-3 mb-2 text-[#16233C]">Login With Facebook</h6>
+                <a href="/facebook/login" class="text-[#4267B2] font-semibold underline" >Login</a>
             </div>
         </div>
     </div>
