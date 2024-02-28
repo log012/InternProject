@@ -27,15 +27,15 @@
 
     <div class="container">
         <div class="row justify-content-center">
-            <div class="border rounded form-group col-md-4"
-                style="padding: 20px 40px; margin-top:6rem; box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.2); background-color: #FFF"">
+            <div class="border rounded form-group col-md-4 md:w-[45%]"
+                style="padding: 20px 40px; margin-top:6rem; box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.2); background-color: #FFF">
                 <form method="POST" action="{{ route('login') }}"> {{-- change the route to the login route --}}
                     @csrf
 
                     <div class="h2" style="font-weight: 700; color: #4267B2">Log in</div>
                     <div class="mb-2">
                         <x-input-label for="email" :value="__('Email')" />
-                        <x-text-input id="email" class="block mt-1 w-full" type="email" name="email"
+                        <x-text-input id="email" class="block mt-1 w-100 " type="email" name="email"
                             :value="old('email')" required autofocus autocomplete="username" />
                         <x-input-error :messages="$errors->get('email')" class="mt-2" />
                     </div>
@@ -43,7 +43,7 @@
                     <div class="mb-3">
                         <x-input-label for="password" :value="__('Password')" />
 
-                        <x-text-input id="password" class="block mt-1 w-full" type="password" name="password" required
+                        <x-text-input id="password" class="block mt-1 w-100" type="password" name="password" required
                             autocomplete="current-password" />
 
                         <x-input-error :messages="$errors->get('password')" class="mt-2" />
