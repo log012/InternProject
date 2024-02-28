@@ -61,6 +61,6 @@ public function logout(){
     // Logout the user
     Auth::logout();
     // Return the welcome view
-    return view('welcome');
+    return view('admin.home');
 }
 }
