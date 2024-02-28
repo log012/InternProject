@@ -18,7 +18,7 @@ use Laravel\Socialite\Two\FacebookProvider;
 |
 */
 Route::get('/', function () {
-    return view('admin/home');
+    return redirect()->route('admin.home');
 });
 
 // Route::get('/home', function () {
