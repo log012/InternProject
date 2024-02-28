@@ -33,6 +33,16 @@ class AdminController extends Controller
     {
         return view('admin.developer');
     }
+
+    public function login()
+    {
+        return view('login');
+    }
+
+    public function profile()
+    {
+        return view('admin.profile');
+    }
     
 
     public function read_lead_message()
