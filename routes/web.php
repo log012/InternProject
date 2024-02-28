@@ -33,6 +33,7 @@ Route::middleware('auth')->group(function () {
 // require __DIR__.'/auth.php';
 // admin
 Route::get('/login',[AdminController::class,'login'])->name('login');
+Route::get('/register',[AdminController::class,'register'])->name('register');
 
 Route::get('/admin/developer',[AdminController::class,'developer'])->name('admin.developer');
 Route::get('/home',[AdminController::class,'home'])->name('admin.home'); 

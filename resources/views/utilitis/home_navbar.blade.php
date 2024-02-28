@@ -28,7 +28,7 @@
         <!-- Login button -->
         <div class="sm:flex sm:items-center sm:ms-6">
             <a href="{{route('login')}}"><button class="px-4 py-1.5 mr-4 bg-[#3D5FA4] rounded text-[#fff] font-bold hover:bg-[#073674] hover:text-[#F4F4F4]" >
-            Login
+            Login | Sign up
             </button></a>
         </div>
     </div>
