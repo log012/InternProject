@@ -32,3 +32,9 @@
 
     }
 }
+
+@media (max-width: 768px){
+    #background-change{
+        background-color: rgb(172, 125, 39) !important;
+    }
+}

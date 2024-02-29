@@ -29,6 +29,11 @@ class AdminController extends Controller
         return view('admin.home');
     }
 
+    public function register()
+    {
+        return view('register');
+    }
+
     public function developer()
     {
         return view('admin.developer');
