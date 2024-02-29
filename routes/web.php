@@ -38,9 +38,10 @@ Route::get('/register',[AdminController::class,'register'])->name('register');
 Route::get('/admin/developer',[AdminController::class,'developer'])->name('admin.developer');
 Route::get('/home',[AdminController::class,'home'])->name('admin.home'); 
 Route::get('/admin/lead_data',[AdminController::class,'read_lead_message']);
+Route::post('/logout',[AuthenticatedSessionController::class,'destroy'])->middleware('auth')->name('logout');
 Route::get('/admin/user_detail/{name}',[AdminController::class,'getFacebookId'])->name('admin.user_detail'); // add /{name} to the route
 // Facebook
 Route::get('/facebook/login',[UserController::class,'userLogin']);
 Route::get('/facebook/callback',[UserController::class,'userCallback']);
-Route::post('/logout',[AuthenticatedSessionController::class,'destroy'])->name('logout')->middleware('auth');
+// Route::post('/logout',[AuthenticatedSessionController::class,'destroy'])->name('logout')->middleware('auth');
 

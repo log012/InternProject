@@ -11,10 +11,7 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <form method="POST" class="ms-auto my-3 my-lg-0" action="{{ route('logout') }}">
-        @csrf
-        <button type="submit" class="btn btn-danger">Logout</button>
-    </form>
+      
       <form class="d-flex ms-auto my-3 my-lg-0" role="search">
         <div class="input-group">
 
@@ -103,6 +100,12 @@
               </span>
               <span>Chat</span>
             </a>
+          </li>
+          <li class="Active">
+            <form method="POST" class="ms-auto my-3 my-lg-0" action="{{ route('logout') }}">
+              @csrf
+              <button type="submit" class="btn btn-danger">Logout</button>
+          </form>
           </li>
          
          </ul>
