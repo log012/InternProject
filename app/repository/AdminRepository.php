@@ -11,8 +11,7 @@ class AdminRepository implements AdminRepositoryInterface{
     private $accessToken ;
 
     public function __construct()
-    {   
-        
+    {           
         $this->accessToken= DB::table('access_tokens')->value('access_token');
     }
     public function dashboard(){
