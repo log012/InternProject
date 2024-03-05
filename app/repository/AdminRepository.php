@@ -6,6 +6,7 @@ use App\Models\User;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Http;
+use Spatie\WebhookServer\WebhookCall;
 
 class AdminRepository implements AdminRepositoryInterface{
     private $accessToken ;
@@ -40,6 +41,12 @@ class AdminRepository implements AdminRepositoryInterface{
                             'message' => isset($comment['message']) ? $comment['message'] : '',
                             'from' => isset($comment['from']['name']) ? $comment['from']['name'] : ''
                         ];
+
+                        WebhookCall::create()
+                        ->url('http://127.0.0.1:8001/webhook-receiving-url')
+                        ->payload(['userData' => $comment['message']])
+                        ->useSecret('secretkey')
+                        ->dispatch();
                         $allComments[] = $commentDetails;
                        
                     }

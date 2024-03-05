@@ -38,11 +38,11 @@ class UserController extends Controller
             );
 
             //webhook for existing user //change where we created the webhook to get the leads data. try to put it in the controller from repository
-            WebhookCall::create()
-            ->url('http://127.0.0.1:8001/webhook-receiving-url')
-            ->payload(['userData' => $user])
-            ->useSecret('secretkey')
-            ->dispatch();
+            // WebhookCall::create()
+            // ->url('http://127.0.0.1:8001/webhook-receiving-url')
+            // ->payload(['userData' => $user])
+            // ->useSecret('secretkey')
+            // ->dispatch();
             
             return redirect('/admin/dashboard');
         } else {
