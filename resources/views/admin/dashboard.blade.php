@@ -26,15 +26,15 @@
         @include('utilitis.home_navbar')
     @endif
     <div class="min-h-screen bg-gray-100 py-6 px-10">
-        <h1 class="font-bold text-2xl text-[#16233C]">Dashboard
-        </h1>
-        <br>
         <div class="flex flex-wrap gap-4 pb-4">
             <div class="w-[30%] flex">
                 <div class="bg-[#0062A3] py-5 rounded-lg shadow-lg flex-grow">
                     <div class="mt-4 px-5">
                         <h2 class="text-2xl font-bold text-white">Leads</h2>
-                        <h2 class="text-xl font-bold text-white">Total Leads-{{count($data)}}</h2> {{-- add {{count($data)}} --}}
+
+                        <h2 class="text-xl font-bold text-white">Total Leads-{{ count($data) }}</h2>
+                        {{-- add {{count($data)}} --}}
+
 
                         <p class="text-[#ddd] pb-6">Some quick example text to build on the card title and make up the
                             bulk of the card's content.</p>
@@ -52,7 +52,8 @@
                         <h2 class="text-2xl font-bold text-black">Campaigns</h2>
                         <h2 class="text-xl font-bold text-balck">Total Campaigns-1</h2> {{-- add {{count($data)}} --}}
 
-                        <p class="text-[#2F2F2F] pb-6">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <p class="text-[#2F2F2F] pb-6">Some quick example text to build on the card title and make up
+                            the bulk of the card's content.</p>
 
                         <hr class="pt-1">
                         <div class="text-black"><a href="/admin/lead_data">Click here for more detail <span>></span></a>
@@ -65,10 +66,11 @@
                 <div class="bg-[#008A8F] py-5 rounded-lg shadow-lg flex-grow">
                     <div class="mt-4 px-5">
                         <h2 class="text-2xl font-bold text-white">Primary card title</h2>
-                        
-                        {{--<h2 class="text-xl font-bold text-white">Total Leads-1</h2> {{-- add {{count($data)}} --}}
 
-                        <p class="text-[#ddd] pb-[3.25rem]">Some quick example text to build on the card title and make up the
+                        {{-- <h2 class="text-xl font-bold text-white">Total Leads-1</h2> {{-- add {{count($data)}} --}}
+
+                        <p class="text-[#ddd] pb-[3.25rem]">Some quick example text to build on the card title and make
+                            up the
                             bulk of the card's content.</p>
 
                         <hr class="pt-1">

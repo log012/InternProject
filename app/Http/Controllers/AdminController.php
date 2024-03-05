@@ -14,13 +14,14 @@ class AdminController extends Controller
 {
     private AdminRepository $adminRepository;
 
-    public function __construct(AdminRepository $adminRepository){
-        $this->adminRepository=$adminRepository;
+    public function __construct(AdminRepository $adminRepository)
+    {
+        $this->adminRepository = $adminRepository;
     }
- 
+
     public function dashboard()
     {
-        
+
         return $this->adminRepository->dashboard();
     }
 
@@ -48,13 +49,11 @@ class AdminController extends Controller
     {
         return view('admin.profile');
     }
-    
+
 
     public function read_lead_message()
     {
-
-
-    return $this->adminRepository->read_lead_message();
+        return $this->adminRepository->read_lead_message();
     }
 
     public function getFacebookId($profile_name)
@@ -64,5 +63,4 @@ class AdminController extends Controller
         // return view('admin.user-detail', ['user' => $user]);
         return $this->adminRepository->getFacebookId($profile_name);
     }
-    
 }
