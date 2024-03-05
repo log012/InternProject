@@ -31,8 +31,10 @@
                 <div class="bg-[#0062A3] py-5 rounded-lg shadow-lg flex-grow">
                     <div class="mt-4 px-5">
                         <h2 class="text-2xl font-bold text-white">Leads</h2>
+
                         <h2 class="text-xl font-bold text-white">Total Leads-{{ count($data) }}</h2>
                         {{-- add {{count($data)}} --}}
+
 
                         <p class="text-[#ddd] pb-6">Some quick example text to build on the card title and make up the
                             bulk of the card's content.</p>

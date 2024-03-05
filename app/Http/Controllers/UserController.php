@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Http;
+use Illuminate\Support\Facades\Session;
 use Laravel\Socialite\Facades\Socialite;
 use Spatie\WebhookServer\WebhookCall;
 
@@ -17,6 +18,7 @@ class UserController extends Controller
     {
         return Socialite::driver('facebook')->redirect();
     }
+
 
     public function userCallback()
     {
@@ -58,4 +60,5 @@ class UserController extends Controller
         Auth::logout();
         return redirect('/home');
     }
+
 }
